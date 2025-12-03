@@ -19,5 +19,5 @@ public class Usuario {
     @Column(nullable = false)
     private String password;
 
-    private String rol; // Obligatorio para la rúbrica
+    private String rol;
 }

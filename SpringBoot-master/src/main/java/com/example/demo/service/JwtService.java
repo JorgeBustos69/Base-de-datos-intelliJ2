@@ -9,7 +9,6 @@ import java.util.Date;
 
 @Service
 public class JwtService {
-    // Llave secreta para firmar los tokens
     private static final Key KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
     public String generarToken(String email) {

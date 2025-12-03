@@ -50,7 +50,6 @@ public class UsuarioController {
 
                 respuesta.put("token", token);
                 respuesta.put("rol", usuario.getRol());
-                // --- NUEVO: Enviamos también el nombre ---
                 respuesta.put("nombre", usuario.getNombre());
 
                 return respuesta;

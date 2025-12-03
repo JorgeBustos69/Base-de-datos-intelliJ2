@@ -16,9 +16,7 @@ public class UsuarioService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    // Método VITAL: Registra al usuario y ENCRIPTA su clave
     public Usuario registrarUsuario(Usuario usuario) {
-        // Encriptamos la contraseña antes de guardar
         usuario.setPassword(passwordEncoder.encode(usuario.getPassword()));
         return usuarioRepository.save(usuario);
     }
